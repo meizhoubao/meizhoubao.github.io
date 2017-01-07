@@ -3,15 +3,24 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Better future</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	</head>
 	<body>
-		<h1 style="color:green; text-align: center">Hacking the world!</h1>
+		<h1 style="color:green; text-align: center; font-size: 60px">Hacking the world!</h1>
 		<div id="formbackground" style="position:absolute; z-index:-1;"><img src="images/IMG_6004.jpg" height="100%" width="100%"/></div>
 		<script type="text/javascript">
 			$(function(){
     			$('#formbackground').height($(window).height());
     			$('#formbackground').width($(window).width());
 			});
+		</script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(
+				function() {
+					$("h1").addClass("animated rubberBand");
+				}
+			);
 		</script>
 	</body>
 </html>
